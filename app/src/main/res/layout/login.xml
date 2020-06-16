@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mwhCloseColor="@color/carolina"
+        app:mwhColorAlpha="0.45"
+        app:mwhGradientAngle="120"
+        app:mwhProgress="1"
+        app:mwhStartColor="@color/colorPrimaryDark"
+        app:mwhVelocity="3"
+        app:mwhWaveHeight="50dp"
+        app:mwhWaves="MultiWave" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waveHeader"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/multiWaveHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveHeader">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/ic_phone" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/verifyBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/verify" />
+    </LinearLayout>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/multiWaveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_gravity="bottom"
+        android:foregroundGravity="bottom"
+        android:scaleY="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveHeader"
+        app:layout_constraintVertical_bias="1.0"
+        app:mwhCloseColor="@color/carolina"
+        app:mwhColorAlpha="0.45"
+        app:mwhGradientAngle="45"
+        app:mwhProgress="1"
+        app:mwhStartColor="@color/colorPrimaryDark"
+        app:mwhVelocity="3"
+        app:mwhWaveHeight="50dp"
+        app:mwhWaves="MultiWave" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
