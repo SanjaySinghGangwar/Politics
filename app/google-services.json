@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1071823396213",
+    "firebase_url": "https://projecttwo-238a0.firebaseio.com",
+    "project_id": "projecttwo-238a0",
+    "storage_bucket": "projecttwo-238a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071823396213:android:66df411ba0bdf00306c73c",
+        "android_client_info": {
+          "package_name": "com.sanjaysgangwar.politics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071823396213-sclt81a9vnce1k0sele4k1ms4ac64g4b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanjaysgangwar.politics",
+            "certificate_hash": "741e935c1779b36a5c9a4066a3c93cf3adf0291e"
+          }
+        },
+        {
+          "client_id": "1071823396213-bmu6j2ld298dkcer5l6t46k4ps52fof6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtjrPdVv7_aOWC1NMTiNEjBtl_SZiei8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071823396213-bmu6j2ld298dkcer5l6t46k4ps52fof6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
